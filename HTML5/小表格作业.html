@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            height: 400px;
+            width: 400px;
+
+        }
+
+        h3 {
+            padding-left: 200px;
+            color: aqua;
+        }
+
+        td {
+            background-color: rgb(221, 218, 218);
+        }
+
+        .font {
+            color: red;
+        }
+
+        .tijiao {
+            margin-left: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" cellpadding="0" cellspacing="0" width="800">
+        <!-- 第一行 -->
+        <tr>
+            <h3>用户注册</h3>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>用户名：</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>密码：</td>
+            <td>
+                <input type="text">
+                <font class="font">密码不能少于六位</font>
+            </td>
+
+        </tr>
+        <!-- 第五行 -->
+        <tr>
+            <td>性别:</td>
+            <td>
+                <input type="radio" name="11" checked="checked">男
+                <input type="radio" name="11">女
+            </td>
+        </tr>
+        <!-- 第六行 -->
+        <tr>
+            <td>个人照片：</td>
+            <td><input type="text"><input type="file" value="浏览">
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td><select>
+                    <option>高中</option>
+                    <option>初中</option>
+                    <option>小学</option>
+                </select></td>
+        </tr>
+        <!-- 第七行 -->
+        <tr>
+            <td>爱好：</td>
+            <td>
+                <input type="checkbox" name="love" checked="checked">阅读
+                <input type="checkbox" name="love">写作
+                <input type="checkbox" name="love">运动
+                <input type="checkbox" name="love">摄影
+                <input type="checkbox" name="love" checked="checked">旅行
+            </td>
+        </tr>
+        <!-- 第八行 -->
+        <tr>
+            <td>自我介绍</td>
+            <td><textarea rows="6">写点什么吧</textarea> </td>
+        </tr>
+        <!-- 第九行 -->
+        <tr>
+            <td></td>
+
+        </tr>
+        <!-- 第十行 -->
+        <tr>
+            <td colspan="2"> <input type="submit" value="提交" class="tijiao">
+                <input type="reset" class="chongzhi">
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

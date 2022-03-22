@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form用于定义表单域  action指表单元素提交给哪个后台 method 提交方式 了解一下就好，name则是表单名字-->
+    <form action="demo.php" method="POST" name="lala">
+        <!-- text文本框，用户可以输入任何文字 -->
+        <!-- value后台人员看到的值 -->
+        <!-- maxlength 用户最多输入的字符数-->
+        用户名：<input type="text" value="请输入用户名" maxlength="6"><br>
+        <!-- password密码框，看不见输入的密码 -->
+        密码：<input type="password"><br>
+        <!--  radio单选按钮 -->
+        <!-- name是表单元素名，必须要相同的name才能实现单选 -->
+        <!-- 单选和多选可以设置checked的属性，当页面打开可以默认选中这个按钮 -->
+        性别：男<input type="radio" name="1" value="男" checked="checked">
+        女<input type="radio" name="1" value="女"><br>
+        <!-- checkbox复选框 -->
+        爱好：吃饭<input type="checkbox" name="2" value=""> 睡觉<input type="checkbox" name="2"> 打游戏<input type="checkbox"
+            name="2">
+        <br>
+        <!-- submit提交按钮 -->
+        <input type="submit" value="免费注册"><br>
+        <!-- reset 重置按钮-->
+        <input type="reset" value="重新填写">
+        <!-- 普通按钮 后期结合js使用（现在用不到）可忽略 -->
+        <input type="button" value="获取短信验证码"><br>
+        <!-- 上传文件 -->
+        <input type="file">
+
+    </form>
+</body>
+
+</html>
